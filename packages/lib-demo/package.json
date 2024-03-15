@@ -1,0 +1,22 @@
+{
+  "name": "lib-demo",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "chenghao <chenghao@didachuxing.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/lib-demo.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com"
+  },
+  "scripts": {
+    "test": "node ./__tests__/lib-demo.test.js"
+  }
+}

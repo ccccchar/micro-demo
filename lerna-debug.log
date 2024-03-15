@@ -1,0 +1,21 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '8.1.2',
+0 silly argv   '$0': '/Users/char/Downloads/char/micro-demo/node_modules/.bin/lerna',
+0 silly argv   name: 'vue-lib'
+0 silly argv }
+1 notice cli v8.1.2
+2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+3 verbose rootPath /Users/char/Downloads/char/micro-demo
+4 info versioning independent
+5 warn ENOREMOTE No git remote found, skipping repository property
+6 error Error: canceled
+6 error     at Interface.<anonymous> (/Users/char/Downloads/char/micro-demo/node_modules/read/lib/read.js:79:15)
+6 error     at Interface.emit (node:events:518:28)
+6 error     at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1125:18)
+6 error     at ReadStream.onkeypress (node:internal/readline/interface:264:20)
+6 error     at ReadStream.emit (node:events:518:28)
+6 error     at emitKeys (node:internal/readline/utils:371:14)
+6 error     at emitKeys.next (<anonymous>)
+6 error     at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+6 error     at ReadStream.emit (node:events:518:28)
