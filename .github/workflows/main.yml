@@ -8,7 +8,7 @@ jobs:
     runs-on: macos-arm64
     # 步骤
     steps:
-      - uses: actions/checkout@v2 # git pull
+      - uses: actions/checkout@main # git pull
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
