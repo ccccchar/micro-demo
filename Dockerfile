@@ -2,7 +2,7 @@
 FROM node:16.20.2 AS builder
 COPY ./ /app
 WORKDIR /app
-RUN npm install && lerna run build
+RUN npm install && npm run build
 
 # # 安装 Git
 # RUN apk add --no-cache git
@@ -17,7 +17,7 @@ RUN npm install && lerna run build
 #     lerna run build
 
 # 构建 Nginx 镜像，版本根据项目需要更换
-FROM nginx:latest
+FROM nginx
 COPY --from=builder /app/packages/main-app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
