@@ -1,8 +1,8 @@
 <template>
   <div id="nav">
-    <a href="/">主应用页面</a> |
-    <a href="/app-vue">子应用：app-vue</a> |
-    <a href="/app-react">应用：app-react</a>
+    <router-link to="/">主应用页面</router-link> |
+    <router-link to="/app-vue">子应用：app-vue</router-link> |
+    <router-link to="/app-react">子应用：app-react</router-link>
   </div>
   <router-view/>
 </template>

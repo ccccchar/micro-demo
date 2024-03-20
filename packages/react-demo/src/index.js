@@ -5,16 +5,11 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-const root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.querySelector('#root'));
+let root;
 
 function render(props) {
   const { container } = props;
+  root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.querySelector('#root'));
 
   root.render(
     <React.StrictMode>
@@ -37,6 +32,7 @@ export async function mount(props) {
 }
 
 export async function unmount(props) {
+  console.log('[react16] unmount');
   root.unmount()
 }
 

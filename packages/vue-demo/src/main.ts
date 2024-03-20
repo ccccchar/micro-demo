@@ -30,6 +30,7 @@ if (!(window as any).__POWERED_BY_QIANKUN__) {
     render(props);
   }
   export async function unmount() {
+    console.log('[vue] unmount');
     app.unmount();
     app = null;
     router = null;
